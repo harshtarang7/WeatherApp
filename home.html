@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: rgb(95, 95, 185);
+        }
+        .form-outer{
+            width: 350px;
+            margin: 30px auto;
+        }
+        .form-outer form{
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .form-outer form h1{
+            text-align: left;
+            padding: 10px 0px;
+            padding-left: 20px;
+            font-size: 19px;
+            color: rgb(0, 110, 255);
+            border-bottom: 1px solid rgb(202, 192, 192);
+            
+        }
+        .form-outer input{
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 17px;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            color: rgb(163, 174, 178);
+        }
+
+        .form-outer button{
+            border-radius: 10px;
+            padding: 10px 55px;
+            margin-bottom: 10px;
+            background-color:  rgb(0, 110, 255);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: 0;
+            cursor: pointer;
+        }
+        .form-outer button:hover{
+            transition: 1s;
+            background-color: rgb(249, 54, 54);
+        }
+        .weather{
+            width: 350px;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            
+            /* position: relative; */
+        }
+        .weather-items{
+            flex-basis: 23%;
+            /* min-height: 450px; */
+            margin: 1%;
+            background: rgba(0, 0, 0, 0.4);
+           
+            text-align: center;
+            padding: 10px 0px;
+            box-shadow: 0px 0px 10px 2px gray;
+            color:white;
+        }
+       
+        .weather-items h2{
+            font-size: 35px;
+            margin: 30px 0px;
+        }
+        .weather-items h3{
+            font-size: 26px;
+            margin: 30px 0px;
+        }
+        .weather-items h4{
+            font-size: 30px;
+            margin: 30px 0px;
+        }
+        .overlay-circle{
+            background:url(istockphoto-1126873583-640x640.jpg) no-repeat;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-outer">
+        <form action="">
+            <h1>Weather App</h1>
+            <input type="text" placeholder="cityName" name="cityname">
+            <br/>
+            <button id="save-btn">Enter</button>
+        </form>
+        <div class="weather">
+           
+           
+            <!-- <div class="weather-items">
+                <h2>IN</h2>
+                <img src="" alt="">
+                <h4>jodhpur</h4>
+                <h3>36.01</h3>
+                <p>Clear sky</p>
+            </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
